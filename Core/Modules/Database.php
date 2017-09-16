@@ -379,6 +379,8 @@ class Database
         $stmt->execute();
 
         $this->_is_executed = true;
+
+        $this->_params = $this->_stmt = [];
         return $stmt;
     }
 
