@@ -1,7 +1,7 @@
 RewriteEngine On
 
 RewriteBase /public
-RewriteRule ^read/?$ read.php
+#RewriteRule ^read/?$ read.php
 
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/public/
