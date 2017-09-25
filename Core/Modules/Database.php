@@ -206,6 +206,18 @@ class Database
     }
 
     /**
+    * order clause
+    *
+    * @param {string} $row Order row
+    * @param {string} $method Order Method
+    */
+    public function orderBy($row, $method)
+    {
+        $this->addStmt('ORDER BY ' . $row . ' ' . $method);
+        return $this;
+    }
+
+    /**
     * sql SELECT clause
     * @param {array} $values Rows
     */
